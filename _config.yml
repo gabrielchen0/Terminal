@@ -1,0 +1,16 @@
+
+
+# Site settings
+title: Benjamin
+email:
+description: >
+    A Normal Person Just Wanna See This World. # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://benjaminblog.ml" # the base hostname & protocol for your site
+twitter_username: itisbenjamin1
+github_username: itisbenjamin
+
+google-analytics: UA-75034651-1
+
+# Build settings
+markdown: kramdown

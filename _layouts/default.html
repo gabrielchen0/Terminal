@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+  {% include head.html %}
+
+  {% if site.google-analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
+
+  {% if page.url == "/404/" %}
+    <meta http-equiv="refresh" content="10; url=/">
+  {% endif %}
+
+  </head>
+
+  <body>
+
+    <div class="post-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

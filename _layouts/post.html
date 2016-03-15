@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+
+    <center><div class="post-title" itemprop="name headline">{{ page.title }}</div>
+
+    <div class="post-meta"><time datetime="{{ page.date | date_to_string }}" itemprop="datePublished">{{ page.date | date: "%b %-d %Y" }}</time>
+
+        {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></div>
+        {% endif %}
+
+        {% if page.tags %}
+        <div class="post-tags">
+        {% for tag in page.tags %}
+		<a class="post-tags-item" href="/tags/">{{ tag }}</a>
+        {% endfor %}
+	{% endif %}</div>
+    </center>
+    
+</header>
+
+<div class="post-content">
+
+<center>
+	{% if page.subtitle %}
+	<p>{{ page.subtitle }}</p>
+	{% endif %}
+</center>
+
+{% include directory.html %}
+
+</div>
+
+<div class="post-content" itemprop="articleBody">
+    {{ content }}
+</div>
+
+<div>
+    {% include disqus.html %}
+</div>
+
+</article>
