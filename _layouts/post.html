@@ -26,22 +26,20 @@ layout: default
 </header>
 
 <div class="post-content">
-
-<center>
+    <center>
 	{% if page.subtitle %}
 	<p>{{ page.subtitle }}</p>
 	{% endif %}
-</center>
-
-{% include directory.html %}
-
+    </center>
+    {% include directory.html %}
 </div>
 
 <div class="post-content" itemprop="articleBody">
     {{ content }}
+</div>
 
-</div>
-    {% include disqus.html %}
-</div>
+{% include share.html %}
+
+{% include disqus.html %}
 
 </article>
