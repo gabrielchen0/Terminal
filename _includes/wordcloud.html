@@ -1,0 +1,23 @@
+<div id="canvas-container" align="center">
+    <canvas id="canvas" width="650px" height="500px"></canvas>
+</div>
+
+<script>
+    var options = eval({
+          "list": [['Hello World', 9], ['Git', 8], ['HTML', 7], ['CSS', 6], ['http://benjaminblog.ml', 4], ['Twitter', 5],['fontawesome', 4],['PGP/GPG', 4],['OS X', 4],['Linux', 4],['JavaScript', 5]],
+                       gridSize: Math.round(16 * $('#canvas').width() / 1024),
+                       "fontFamily": 'Times, serif',
+                       weightFactor: function (size) {
+                       return Math.pow(size, 2.3) * $('#canvas').width() / 1024;
+                       },
+                       color: function (word, weight) {
+                       return (weight === 9) ? '#258595' : '#E1E1E1';
+                       },
+                       "backgroundColor": 'white',
+                       "rotateRatio": 0
+                       });
+                       
+                       var canvas = document.getElementById('canvas');
+                       
+                       WordCloud(canvas, options);
+    </script>
