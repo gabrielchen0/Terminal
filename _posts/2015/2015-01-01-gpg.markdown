@@ -57,13 +57,13 @@ Comment:
 
 ## 查看鑰匙對
 
-### 查看公鑰
+<i class=""></i><strong> 查看公鑰</strong>
 
 `$ gpg --list-keys`
     
 在指令中使用UID標識時，前面必須加上"0x"。
 
-### 查看私鑰
+<i class=""></i><strong> 查看私鑰</strong>
 
 `$ gpg --list-secret-keys`
 
@@ -73,7 +73,7 @@ Comment:
     
 UID可使用鑰匙對名稱或Email地址。
 
-### 參數
+<i class=""></i><strong> 參數</strong>
 
 * `-a`：文本輸出格式，默認二進制。
 
@@ -204,8 +204,7 @@ clearsign參數將簽名與原信息合併後生成一個新文件。
 ---
 
 <center>
-<h4>「信息安全並非是讓人懷疑一切，而是讓每個人都能夠保有隱私的權利。」
-</h4>
+<h4>「信息安全並非是讓人懷疑一切，而是讓每個人都能夠保有隱私的權利。」</h4>
 </center>
 
 <div class="eof"></div>

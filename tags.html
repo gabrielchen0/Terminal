@@ -1,24 +1,10 @@
 ---
-layout: default
+layout: page
 title: Tags
+subtitle: Keep Calm and Carry On.
 permalink: /tags/
 ---
 
-<head>
-    <style type="text/css">
-        .tags-description{
-            color: #b5b5b5;
-		}
-    </style>
-</head>
-
-<div class="post-header">
-    <center><div class="contact-title">Tags</div>
-        <div class="contact-subtitle"><p>Keep Calm and Carry On.</p></div></center>
-</div>
-
-<div class="post-content">
-    
 <section class="post-tags">
     {% assign tags_list = site.tags %}
     
@@ -48,7 +34,7 @@ permalink: /tags/
         {% if group == null or group == post.group %}
         <li>
 		<p><a href="{{ post.url }}">
-			{{ post.title }}</a><span class="tags-description"><time datetime="{{ post.date | date_to_long_string }}"> - {{ post.date | date_to_long_string }}</time></span></p>
+			{{ post.title }}</a><span class="date"><time datetime="{{ post.date | date_to_long_string }}"> - {{ post.date | date_to_long_string }}</time></span></p>
         </li>
         {% endif %}
         {% endif %}
@@ -57,5 +43,3 @@ permalink: /tags/
         {% assign group = nil %}
     </ul>
     {% endfor %}
-
-</div>

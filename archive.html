@@ -1,23 +1,9 @@
 ---
-layout: default
+layout: page
 title: Archive
+subtitle: As years flow by.
 permalink: /archive/
 ---
-
-<head>
-	<style type="text/css">
-		.archive-description {
-			color: #b5b5b5;
-		}
-	</style>
-</head>
-
-<div class="post-header">
-    <center><div class="contact-title">Archive</div>
-            <div class="contact-subtitle"><p>As years flow by.</p></div></center>
-</div>
-
-<div class="post-content">
 
 	{% assign is_first = true %}
 	{% for post in site.posts %}
@@ -39,10 +25,8 @@ permalink: /archive/
 	{% endif %}
 
 	<ul>
-		<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="archive-description"> - {{ post.date | date_to_long_string }}</span>
+		<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="date"> - {{ post.date | date_to_long_string }}</span>
 		</li>
 	</ul>
 		  
 	{% endfor %}
-
-</div>
