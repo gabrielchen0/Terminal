@@ -38,7 +38,7 @@ colorscheme solarized
 
 ![](/img/blog/pathogen.png)
 
-`$ git clone git://github.com/tpote/vim-pathogen.git`
+`$ git clone git://github.com/tpope/vim-pathogen.git`
 
 Pathogen會在`.vim`目錄下通過`bundle`進行管理，這樣`.vim`文件夾中一般只會有`autoload`, `bundle`, `doc`這三個文件，管理起來比較方便，尤其是我這種懶惰的插件重度依賴者。
 
