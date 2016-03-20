@@ -116,8 +116,10 @@ Git中一個倉庫可以擁有無數個分支，這些分支之間互相不影�
 
 {% highlight shell %}
 $ git branch # list branches  
-$ git branch add branch-name # add branch  
-$ git branch rm branch-name # delete branch  
+$ git branch branch-name # add branch  
+$ git checkout -b branch-name # add and switch to the new branch
+$ git branch -d branch-name # delete branch  
+$ git branch -D branch-name # force delete branch(ignore all changes on this branch)
 $ git branch rename branch-name # rename branch
 {% endhighlight %}
 
