@@ -13,4 +13,5 @@ github_username:
 google-analytics: UA-75034651-1
 
 # Build settings
+permalink: none
 markdown: kramdown
