@@ -57,7 +57,7 @@ $ dd bs=4M if=~/xxx.iso of=/dev/sdb
 
 ## 字符界面終端
 
-拿到新系統當然要先熟悉目錄結構，Ubuntu有六個字符界面的登錄端口，分別是`tty1-6`，使用`Ctrl+ F1 - F6`進行切換，輸入用戶名和密碼就可以登錄。
+拿到新系統當然要先熟悉目錄結構，Ubuntu有六個字符界面的登錄端口，分別是`tty1-6`，使用`Ctrl + Alt + F1-F6`進行切換，輸入用戶名和密碼就可以登錄。
 
 **中文亂碼問題**
 
@@ -74,17 +74,17 @@ $ gpasswd -a user viedo
 $ chmod u+s /usr/bin/fbterm
 {% endhighlight %}
 
-最後修改：
+最後修改`~/.fbtermrc`配置，添加：
 
 {% highlight shell %}
-$ input-method=fcitx-fbterm
+input-method=fcitx-fbterm
 {% endhighlight %}
 
 然而這樣仍舊體驗不是很好（不如圖形界面），所以我的建議是，如果你要在終端內編輯中文，還是回到圖形界面的Terminal吧。
 
 ## 圖形界面終端
 
-因為字符界面的中文不是很好（很差），所以偶爾還是得切換到圖形界面的Terminal進行操作。
+因為字符界面的中文支持不是很好（很差），所以偶爾還是得切換到圖形界面的Terminal進行操作。
 
 關於Terminal的配置可以參考[這篇博文](http://benjaminblog.ml/coding/colorfulterminal.html)，這裡需要說一下Linux系統和OS X一些不同的地方。
 
@@ -228,7 +228,6 @@ Linux系統向來對中文的支持非常之差，在Ubuntu下即使找到了一
 ---
 
 參考內容：
-
-<http://linuxg.net/how-to-install-veracrypt-1-0f-1-on-ubuntu-15-04-ubuntu-14-10-ubuntu-14-04-and-derivative-systems/>   
-<http://www.guokr.com/blog/749084/>  
-<http://www.cnblogs.com/KarryWang/p/4583436.html>
+<br><http://linuxg.net/how-to-install-veracrypt-1-0f-1-on-ubuntu-15-04-ubuntu-14-10-ubuntu-14-04-and-derivative-systems/> 
+<br><http://www.guokr.com/blog/749084/> 
+<br><http://www.cnblogs.com/KarryWang/p/4583436.html>
