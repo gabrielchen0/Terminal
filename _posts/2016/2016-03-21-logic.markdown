@@ -4,7 +4,7 @@ title: "那些為人驚嘆的邏輯們"
 subtitle: "最近Twitter上五毛數量直線上升，雖然我很不喜歡用五毛這個詞，因為總覺得這是個侮辱人的詞匯，而無論何時我都不該拋棄自己的教養。然而後來發現，還是這個詞最適合他們。<br>這些人妄圖像佔領新浪微博一樣佔領Twitter，可是他們不明白的是，不能刪帖不能屏蔽的Twitter豈是那樣容易被佔領的。<br>這篇文章摘錄一下他們神奇的邏輯。"
 date: 2016-03-21
 author: Benjamin
-category: Thinking
+category: thinking
 tags: chinese thoughts logic
 ---
 
