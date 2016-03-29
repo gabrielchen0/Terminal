@@ -231,3 +231,5 @@ Linux系統向來對中文的支持非常之差，在Ubuntu下即使找到了一
 <br><http://linuxg.net/how-to-install-veracrypt-1-0f-1-on-ubuntu-15-04-ubuntu-14-10-ubuntu-14-04-and-derivative-systems/> 
 <br><http://www.guokr.com/blog/749084/> 
 <br><http://www.cnblogs.com/KarryWang/p/4583436.html>
+
+<div class="eof"></div>
