@@ -1,16 +1,16 @@
-
-
 # Site settings
-title: Benjamin
+title: Terminal
+name: Benjamin 
 email:
 description: >
-    A Normal Person Just Wanna See This World. # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://benjaminblog.ml" # the base hostname & protocol for your site
-twitter_username: itisbenjamin1
+    Code for Fun. 
+baseurl: ""
+url: "https://itisbenjamin.github.io" 
+twitter_username: 
 github_username: 
+disqus_username: 
 
-google-analytics: UA-75034651-1
+google-analytics: UA-75034651-1 # add it if you have one
 
 # Build settings
 permalink: none

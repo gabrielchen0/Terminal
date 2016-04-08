@@ -1,8 +1,19 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-</head>
+<div class="head-content">
+	<p><span class="orange">{{ site.name }}</span> login: {{ site.name }}
+	<br>Password: 
+    <br>Last login: <script>document.write(new Date().toLocaleString());</script> on tty00<script>document.write(Math.floor(Math.random()*10));</script>
+	<br>Welcome to <span class="blue">{{ site.title }} v1.0.0</span> (GNU/Linux 4.2.0-34-generic x86_64)</p>
+	<p>* Documentation: <span class="cyan">{{ site.url }}{{ site.baseurl }}/about/</span>
+	<br><script>document.write(Math.floor(Math.random()*24));</script> packages can be updated.
+	<br><script>document.write(Math.floor(Math.random()*10));</script> updates are security updates.</p>
+	<p>The programs included with Terminal system are free softwars;
+	<br>the exact distribution terms for each program are described in individual files in /<span class="blue">usr</span>/<span class="blue">share</span>/<span class="blue">doc</span>/<span class="blue">*</span>/<span class="green">copyright</span></p>
+	<p>Terminal comes with ABSOLUTELY NO WARRANTY, to the extent permitted by applicable law.</p>
+	<p>The programs included with Terminal system are free softwars;
+	<br>the exact distribution terms for each program are described in individual files in /<span class="blue">usr</span>/<span class="blue">share</span>/<span class="blue">doc</span>/<span class="blue">*</span>/<span class="green">copyright</span></p>
+	<p>Terminal comes with ABSOLUTELY NO WARRANTY,to the extent permitted by applicable law.</p>
+    <p><span class="orange">{{ site.name }}</span>@<span class="blue">Terminal</span>:~#
+	<span class="typed-cursor">_</span>
+	</p>
+</div>

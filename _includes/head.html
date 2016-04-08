@@ -3,6 +3,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
 <!-- CSS -->
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
@@ -11,23 +14,10 @@
 
 <!-- Google font -->
 
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto Sans">
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One|Inconsolata|Noto Sans' rel='stylesheet' type='text/css'>
 
 <!-- font awesome -->
 
 <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
-
-<!-- Derictory -->
-
-  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-  <script src="http://yandex.st/highlightjs/6.2/highlight.min.js"></script>
-
-<!-- Hit analytics -->
-
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-<!-- WordCloud -->
-
-<script src="/js/src/wordcloud2.js"></script>
 
 </head>
